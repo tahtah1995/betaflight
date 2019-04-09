@@ -80,7 +80,7 @@ static inline uint8_t __basepriSetRetVal(uint8_t prio)
     if(prio && (atomic_BASEPRI == 0 || atomic_BASEPRI > prio)) {
         atomic_BASEPRI = prio;
     }
-    return 1;
+    return 0;
 }
 
 #else
